@@ -1,0 +1,55 @@
+body {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 180px;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 5px solid #c44900;
+    background: #efd6ac;
+    color: #183a37;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-shadow: 1px 1px #c44900;
+
+}
+
+@keyframes colorChange {
+    0%   {background-color: #efd6ac;box-shadow: 2px 2px #41363b;}
+    40%  {background-color: #e9d5b3;box-shadow: 4px 4px #41363b;}
+    60%  {background-color: rgb(243, 218, 187);box-shadow: 6px 6px #41363b;}
+    80% {background-color: bisque;box-shadow: 8px 8px #41363b;}
+    100% {background-color: bisque;box-shadow: 10px 10px #41363b;}
+}
+
+.card:hover {
+    background-color: bisque;
+    animation-name: colorChange;
+    animation-duration: 0.2s;
+    box-shadow: 10px 10px #41363b;
+  }
+
+.profile-photo:hover {
+    background-color: bisque;
+    animation-name: colorChange;
+    animation-duration: 0.2s;
+    box-shadow: 10px 10px #41363b;
+  }
+  
+
+.border {
+    border: 1px dotted blue;
+}
+
